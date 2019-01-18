@@ -1,0 +1,21 @@
+.nav-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 16px;
+  justify-items: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  padding: 32px;
+  box-sizing: border-box;
+
+  @media (max-width: 930px) {
+    grid-template-columns: repeat(3, auto);
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: repeat(2, auto);
+  }
+  @media (max-width: 510px) {
+    grid-template-columns: repeat(1, auto);
+  }
+}

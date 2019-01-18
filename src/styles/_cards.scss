@@ -1,0 +1,26 @@
+@import "color-palette";
+
+.nav-card {
+  width: 200px;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @include mdc-card-shape-radius(2px);
+  @include mdc-card-outline($color-gray-400, 1px);
+
+  .mdc-card__primary-action {
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
+    margin-top: 8px;
+  }
+  h2 {
+    margin-top: 0px;
+  }
+  h3 {
+    text-align: left;
+    margin: 0 16px 16px;
+  }
+}
