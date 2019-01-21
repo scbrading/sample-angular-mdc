@@ -6,7 +6,7 @@
   text-align: center;
 
   @include mdc-card-shape-radius(2px);
-  @include mdc-card-outline($color-gray-400, 1px);
+  @include mdc-card-outline($material-color-grey-400, 1px);
 
   .mdc-card__primary-action {
     height: 100%;

@@ -1,7 +1,12 @@
+@import "color-palette";
+
 $mdc-theme-primary: #244EED;
 $mdc-theme-secondary: #EDB124;
 $mdc-typography-font-family: "Montserrat";
 
 body {
   margin: 0;
+  font-family: "Montserrat", serif;
+  height: 100vh;
 }
+

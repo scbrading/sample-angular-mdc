@@ -1,0 +1,19 @@
+@import "color-palette";
+@import "shadows";
+
+.button-showcase {
+  grid-column: 10/13;
+  @include mdc-button-filled-accessible($material-color-green-700);
+  border: 1px solid $material-color-green-900;
+  @include shadow2;
+}
+
+.table-button {
+  display: block;
+  width: 100%;
+  @include mdc-button-outline-color($mdc-theme-secondary);
+  @include mdc-button-ink-color($mdc-theme-secondary);
+  @include shadow2;
+  border-width: 1px;
+  margin-bottom: 16px;
+}

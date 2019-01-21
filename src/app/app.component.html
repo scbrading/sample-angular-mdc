@@ -10,7 +10,7 @@
   <mdc-drawer-header title="Admin settings"></mdc-drawer-header>
   <mdc-list-divider></mdc-list-divider>
   <mdc-drawer-content>
-    <mdc-list-item *ngFor="let navItem of navigationLinks" (selectionChange)="onDrawerSelect(navItem.route)"
+    <mdc-list-item *ngFor="let navItem of navigationLinks" (selectionChange)="onDrawerSelect(navItem.route,rla)"
                    [activated]="rla.isActive"
                    routerLinkActive #rla="routerLinkActive"
                    [routerLink]="navItem.route">
@@ -22,6 +22,6 @@
 </mdc-drawer>
 
 
-<div mdcDrawerAppContent mdcTopAppBarFixedAdjust>
+<div mdcDrawerAppContent mdcTopAppBarFixedAdjust class="router-container">
   <router-outlet></router-outlet>
 </div>
